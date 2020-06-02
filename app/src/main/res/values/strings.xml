@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">MeatStoreApp</string>
+    <string name="store_title">Meat Store</string>
+    <string name="button_build_order">Shop Online</string>
+    <string name="title_activity_build_order">BuildOrderActivity</string>
+    <string name="button_checkout_text">Checkout</string>
+
+    <!-- item browse fragment strings -->
+    <string name="item_browse_fragment_label">Item Categories Fragment</string>
+    <string name="search_bar_hint_string">Search Bar</string>
+    <string name="search_bar_text_string">Search an Item</string>
+    <string name="search_autofill_hint_string">food product</string>
+
+    <!-- item view fragment strings -->
+    <string name="item_view_fragment_label">Item View</string>
+
+    <!-- order view fragment strings -->
+    <string name="order_view_fragment_label">Order View</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>

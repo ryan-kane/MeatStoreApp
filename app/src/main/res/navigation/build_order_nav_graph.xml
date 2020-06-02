@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ItemBrowseFragment">
+
+    <fragment
+        android:id="@+id/ItemBrowseFragment"
+        android:name="com.example.meatstoreapp.BuildOrder.ItemBrowseFragment"
+        android:label="@string/item_browse_fragment_label"
+        tools:layout="@layout/fragment_item_browse">
+
+        <action
+            android:id="@+id/action_ItemBrowse_to_ItemView"
+            app:destination="@id/ItemViewFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ItemViewFragment"
+        android:name="com.example.meatstoreapp.BuildOrder.ItemViewFragment"
+        android:label="@string/item_view_fragment_label"
+        tools:layout="@layout/fragment_item_view">
+
+    </fragment>
+
+</navigation>
