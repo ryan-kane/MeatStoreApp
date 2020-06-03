@@ -3,7 +3,13 @@
     <string name="store_title">Meat Store</string>
     <string name="button_build_order">Shop Online</string>
     <string name="title_activity_build_order">BuildOrderActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
     <string name="button_checkout_text">Checkout</string>
+
+    <!-- bottom navigation menu strings -->
+    <string name="bottom_navigation_item_home_title">Home</string>
+    <string name="bottom_navigation_item_build_order_title">Order</string>
+    <string name="bottom_navigation_item_previous_orders_title">Previous</string>
 
     <!-- item browse fragment strings -->
     <string name="item_browse_fragment_label">Item Categories Fragment</string>
@@ -17,12 +23,8 @@
     <!-- order view fragment strings -->
     <string name="order_view_fragment_label">Order View</string>
     <string name="title_activity_checkout">CheckoutActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

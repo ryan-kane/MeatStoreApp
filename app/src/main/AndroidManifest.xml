@@ -3,27 +3,24 @@
     package="com.example.meatstoreapp">
 
     <application
+        android:fullBackupContent="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".Checkout$CheckoutActivity"
+            android:name=".Checkout.CheckoutActivity"
             android:label="@string/title_activity_checkout"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity
-            android:name=".BuildOrder$BuildOrderActivity"
-            android:label="@string/title_activity_build_order"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.BUILD_ORDER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".MenuActivity">
+
+        <activity android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,5 +28,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
