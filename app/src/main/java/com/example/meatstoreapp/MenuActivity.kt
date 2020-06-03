@@ -1,13 +1,11 @@
 package com.example.meatstoreapp
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.MenuItem
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_menu.*
 
 class MenuActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
