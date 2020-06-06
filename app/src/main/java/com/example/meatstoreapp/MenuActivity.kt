@@ -1,13 +1,17 @@
 package com.example.meatstoreapp
 
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MenuActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+class MenuActivity: AppCompatActivity(),
+    BottomNavigationView.OnNavigationItemSelectedListener,
+    BottomNavigationView.OnNavigationItemReselectedListener
+{
 
     private lateinit var viewPager: ViewPager
     private lateinit var bottomNavigationView: BottomNavigationView
@@ -28,6 +32,7 @@ class MenuActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
         selectBottomNavigationViewMenuItem(defaultScreen.menuItemId)
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this)
+        bottomNavigationView.setOnNavigationItemReselectedListener(this)
 
         viewPager.adapter = mainPagerAdapter
         viewPager.addOnPageChangeListener(object: ViewPager.SimpleOnPageChangeListener() {
@@ -60,11 +65,18 @@ class MenuActivity: AppCompatActivity(), BottomNavigationView.OnNavigationItemSe
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        Log.d("MenuActivity", "Selected Item : $item")
         getMainContentForMenuItem(item.itemId)?.let {
             showContent(it)
             return true
         }
         return false
     }
+
+    override fun onNavigationItemReselected(item: MenuItem) {
+        // reload the activity
+        Log.d("MenuActivity", "Reselected Item : $item")
+    }
+
 
 }

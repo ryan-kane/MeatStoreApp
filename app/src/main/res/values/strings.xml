@@ -2,7 +2,8 @@
     <string name="app_name">MeatStoreApp</string>
     <string name="store_title">Meat Store</string>
     <string name="button_build_order">Shop Online</string>
-    <string name="title_activity_build_order">BuildOrderActivity</string>
+    <string name="title_fragment_build_order">BuildOrderFragment</string>
+    <string name="title_fragment_category_browse">BuildOrder.CategoryBrowseFragment</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="button_checkout_text">Checkout</string>
 

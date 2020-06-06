@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/ItemBrowseFragment"
-        android:name="com.example.meatstoreapp.BuildOrder.ItemBrowseFragment"
+        android:name="com.example.meatstoreapp.BuildOrder.ProductBrowseFragment"
         android:label="@string/item_browse_fragment_label"
-        tools:layout="@layout/fragment_item_browse">
+        tools:layout="@layout/fragment_product_browse">
 
         <action
             android:id="@+id/action_ItemBrowse_to_ItemView"
